@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>SHOPPING CART</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+
+
+<body>
+
+    <div class="title"><center><h1>ShoppingBag</h1></center></div>
+    <form class="chart">
+
+    <div class="container">
+
+    <!-- Product #1 -->
+        <div class="row">
+            
+            <div class="col-lg-1">
+                <div class="image"><img src="spadri.jpg" width = 100%  alt="" /></div>
+            </div>
+    
+            <div class="col-lg-1 ">
+                <div class="description">
+                    <p><span>Spadri</span></p>
+                </div>
+            </div>
+
+            <div class="col-lg-2 ">
+                <div class="Color">
+                    <select >
+                        <option>Choose Color</option>							   
+                        <option value="WH">White</option>
+                        <option value="BL">Black</option>
+                        <option value="BR">Brown</option>
+                        <option value="RD">Red</option>
+                        <option value="Bl">Blue</option>
+                    </select>   
+                </div>
+            </div>
+                        
+                
+           
+    
+            <div class="col-lg-2 col-sm-12">
+                <div class="quantity">
+                    
+                        <div class="input-prepend-append">
+                                <button type="button"class="btn btn-prepend"> - </button>
+                                <input type="number" min="0" max="10"class="itemquantity" id="numberp1" value="0" size="1%" onclick="multiplication1() & total()" >
+                                <button type="button"class="btn btn-append"  > + </button>
+                         </div>
+                </div>
+            </div>
+
+            <div class="col-lg-1 col-sm-12">
+                <div class="price" value="100" id="Price1">100</div>
+            </div>
+            <div class="col-lg-1 col-sm-12">
+                <div class="price" id="totalPrice1">0</div>
+            </div>
+
+     
+            <div class="col-lg-1">
+                <div class="buttons">
+                    <!-- <span class="like-btn"></span> -->
+                   <a href="#"> <img src="iconpanier.jpg" width=60%></a>
+                </div>
+            </div>
+            <div class="col-lg-1">
+                <div class="buttons">
+                    <button class="btn" type=reset onclick="myResetFunction1() & total()"><i class="fa fa-trash" ></i></button>
+                </div> 
+            </div>  
+     </div>
+       
+    </div>  
+
+
+
+
+    <!-- Product #2 -->
+    <div class="container">
+    <div class="row">
+
+            <div class="col-lg-1">
+                <div class="image"><img src="Sneakers.jpg" width = 100%  alt="" /></div>
+            </div>
+
+            <div class="col-lg-1 ">
+                    <div class="description">
+                        <p><span>Sneakers</span></p>
+                    </div>
+            </div>
+    
+            <div class="col-lg-2 ">
+                    <div class="Color">
+                        <select >
+                            <option>Choose Color</option>							   
+                            <option value="WH">White</option>
+                            <option value="BL">Black</option>
+                            <option value="BR">Brown</option>
+                            <option value="RD">Red</option>
+                            <option value="Bl">Blue</option>
+                        </select>   
+                    </div>
+            </div>
+                                   
+
+            <div class="col-lg-2 col-sm-12">
+                    <div class="quantity">
+                        
+                            <div class="input-prepend-append">
+                                    <button type="button"class="btn btn-prepend"> - </button>
+                                    <input type="number" min="0" max="10"class="itemquantity" id="numberp2" value="0"  size="-2%" onclick="multiplication2() & total()">
+                                    <button type="button"class="btn btn-append"> + </button>
+                            </div>
+                    </div>
+            </div>
+            <div class="col-lg-1 col-sm-12">
+                <div class="price" id="Price2" value="170">170</div>
+            </div>
+            <div class="col-lg-1 col-sm-12">
+                <div class="price"  id="totalPrice2">0</div>
+            </div>
+
+
+                <div class="col-lg-1">
+                    <div class="itemquantity">
+                        <!-- <span class="like-btn"></span> -->
+                        <a href="#"> <img src="iconpanier.jpg" width=60%></a>
+                    </div>
+                </div>
+                <div class="col-lg-1">
+                    <div class="buttons">
+                        <button class="btn" type=reset onclick="myResetFunction2()& total()"><i class="fa fa-trash"></i></button>
+                    </div> 
+                </div>  
+        </div>  
+
+           
+    </div>  
+
+    <!-- Product #3 -->
+    <div class="container">
+    <div class="row">
+            
+            <div class="col-lg-1">
+                <div class="image"><img src="scarf.jpg" width = 100%  alt="" /></div>
+            </div>
+
+           <div class="col-lg-1 ">
+                    <div class="description">
+                        <p><span>Scarf</span></p>
+                    </div>
+            </div>
+    
+            <div class="col-lg-2 ">
+                    <div class="Color">
+                        <select >
+                            <option>Choose Color</option>							   
+                            <option value="WH">White</option>
+                            <option value="BL">Black</option>
+                            <option value="BR">Brown</option>
+                            <option value="RD">Red</option>
+                            <option value="Bl">Blue</option>
+                        </select>   
+                    </div>
+            </div>
+
+            <div class="col-lg-2 col-sm-12">
+                <div class="quantity">
+
+                        <div class="input-prepend-append">
+                                <button type="button"class="btn btn-prepend"> - </button>
+                                <input type="number" min="0" max="10" class="itemquantity" id="numberp3" value="0" size="1%" onclick="multiplication3() & total()">
+                                <button type="button"class="btn btn-append"> + </button>
+                        </div>
+                </div>
+
+                <!-- <button class="plus-btn" type="button" name="button">
+                </button>
+                <input type="text" name="name" value="0" size="3%">
+                <button class="minus-btn" type="button" name="button">
+                </button> -->
+                <!-- </div> -->
+            </div>
+
+            <div class="col-lg-1 col-sm-12">
+                <div class="price" value="80" id="Price3">80</div>
+            </div>
+            <div class="col-lg-1 col-sm-12">
+                <div class="price"  id="totalPrice3">0</div>
+            </div>
+            <div class="col-lg-1">
+                    <div class="buttons">
+                        <!-- <span class="like-btn"></span> -->
+                        <a href="#"> <img src="iconpanier.jpg" width=60%></a>
+                    </div>
+                </div>
+                <div class="col-lg-1">
+                    <div class="buttons">
+                        <button class="btn" type=reset onclick="myResetFunction3()&total()"><i class="fa fa-trash"></i></button>
+                    </div> 
+                </div>  
+
+            </div>
+
+    </div>
+    
+        <div class="row">
+            
+            <div class="col-lg-3">
+            </div>
+        
+            <div class="col-lg-2 col-sm-12" >
+                <p margin-left=2%><span >Total Price</span></p>
+            </div>
+            <div class="col-lg-1">
+                <div class="totalprice" id="TotalPrice" value="0">0</div>
+            </div>
+
+            <!-- <div class="col-lg-1 ">
+                <p><span>Payer</span></p>
+            </div> -->
+
+            <div class="col-lg-1">
+                    <div class="buttons">
+                        <button class="btn"type=reset onclick="myResetFunction()"><i class="fa fa-trash"></i></button>
+                    </div> 
+            </div>  
+           <div class="col-lg-1 ">
+                    <div class="description">
+                            <!-- <button class="btn"><i class="payer"></i></button> -->
+                            <a href="#"> <img src="card.png" width=50%></a>
+                    </div>
+            </div>  
+        </div>      
+       
+  
+    </form>
+
+<!-- payer carte banciare mot de passe -->
+    <script src="main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
